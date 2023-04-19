@@ -1,0 +1,61 @@
+.login-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid rgb(0, 105, 217);
+    padding: 70px;
+    background-image: url('https://a-static.besthdwallpaper.com/landscape-mountain-minimalist-wallpaper-2560x2048-81092_33.jpg');
+    background-size: cover;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #50d900;
+  }
