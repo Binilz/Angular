@@ -1,0 +1,15 @@
+<div class="login-container">
+  <h1>Enter the OTP</h1>
+<form>
+  <div class="form-group">
+    <input type="number" id="otp1" name="otp1" class="form-control"  maxlength="1" min="0" max="9" (input)="moveToNext($event, 'otp2')" >
+    <input type="number" id="otp2" name="otp2" class="form-control"  maxlength="1" min="0" max="9" (input)="moveToNext($event, 'otp3')">
+    <input type="number" id="otp3" name="otp3" class="form-control"  maxlength="1" min="0" max="9" (input)="moveToNext($event, 'otp4')">
+    <input type="number" id="otp4" name="otp4" class="form-control"  maxlength="1" min="0" max="9" >
+  </div>
+
+  <button type="submit" class="btn btn-primary">Reset Password</button>
+</form>
+  
+  </div>
+  
