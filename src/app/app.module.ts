@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { OtpComponent } from './otp/otp.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'forgot', component: ForgotPasswordComponent },
   { path: 'otp', component: OtpComponent },
   { path: 'reset', component: ResetPasswordComponent },
+  { path: 'profile', component: ProfileComponent },
   
 ];
 
@@ -28,7 +30,7 @@ const routes: Routes = [
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    OtpComponent,ResetPasswordComponent
+    OtpComponent,ResetPasswordComponent, ProfileComponent
   
 
   ],
