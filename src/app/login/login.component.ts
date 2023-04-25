@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
-// add the faSearch icon to the library
-library.add(faSearch);
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,5 +7,11 @@ library.add(faSearch);
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
+ constructor(){}
+ data={
+  username:''
+ }
+ onsubmit() {
+  // Handle form submission logic here
+}
 }

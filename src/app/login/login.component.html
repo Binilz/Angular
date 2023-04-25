@@ -1,14 +1,17 @@
 <div class="login-container">
     <h1>Login</h1>
-    <form>
+    <form #form="ngForm" (ngSubmit)="form.valid&&onsubmit()">
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+        <input type="text" id="username" name="username" class="form-control" placeholder="Username" required #username="ngModel" [(ngModel)]="data.username">
+        <label style="font-size: 16px; color: red;" *ngIf="form.submitted && username.errors?.['required']">Username is required</label>
+
       </div>
 
       <div class="form-group">
         <label for="password">Password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+        <label style="font-size: 16px; color: red;" *ngIf="form.submitted && username.errors?.['required']">Password is required</label>
       </div>
       
       <div class="link-container">
